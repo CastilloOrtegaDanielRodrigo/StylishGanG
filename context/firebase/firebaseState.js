@@ -23,7 +23,7 @@ const FirebaseState = props =>{
 
         // fUNCION QUE SE EJECUTA PARA TRAER LO PRODUSCTOS
         const obtenerProductos = () => {
-        
+        console.log('desde firebaseState')
 
             //consultar firebase
             firebase.db
@@ -43,7 +43,7 @@ const FirebaseState = props =>{
                     type: OBTENER_PRODUCTOS_EXITO,
                     payload: articulos
                 });
-
+                console.log(articulos);
             }
         }
     return ( //Nuestro Provider va estar sobre los "props hijos" (funciones, states y estara disponible a lo largo de las pantallas)

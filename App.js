@@ -3,7 +3,6 @@ import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
 import DetalleProducto from './views/DetalleProducto';
 import FormularioProducto from './views/FormularioProducto';
 import MTienda from './views/MTienda';
@@ -21,6 +20,7 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <>
+  
     <FirebaseState>
       <PedidoState>
         <NavigationContainer>
@@ -86,7 +86,6 @@ const App = () => {
         </NavigationContainer>
       </PedidoState>
     </FirebaseState>
-    
     </>
   );
 };

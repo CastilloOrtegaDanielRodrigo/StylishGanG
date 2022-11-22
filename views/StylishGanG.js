@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native';
-import { NativeBaseProvider, Container, Button, Text, Box,  Input, Toast, Heading, FormControl, Stack} from 'native-base';
+import { NativeBaseProvider, Container, Button, Text, Box, Image, Center, Input, Toast, Heading, FormControl, Stack} from 'native-base';
 import globalStyles from '../styles/global';
 import { useNavigation } from '@react-navigation/native';
 
@@ -8,7 +8,7 @@ const StylishGanG = () => {
 
     const navigation = useNavigation();
 
-    return (
+    return ( 
         <NativeBaseProvider>
             <Box  style={globalStyles.contenedor}>
                 <View style={[globalStyles.contenido, styles.contenido]}>

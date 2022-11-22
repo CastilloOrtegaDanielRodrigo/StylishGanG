@@ -5,6 +5,11 @@ const globalStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000000',
     },
+    contenedorTienda: {
+        flex: 1,
+        backgroundColor: '#FFFFFF',
+        marginHorizontal: '3%'
+    },
     contenido: {
         marginHorizontal: '2.5%',
         flex: 1,
