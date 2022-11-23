@@ -20,7 +20,6 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <>
-  
     <FirebaseState>
       <PedidoState>
         <NavigationContainer>

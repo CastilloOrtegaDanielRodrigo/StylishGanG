@@ -10,12 +10,12 @@ import {
     List,
     Left,
     FlatList,
-    Thumbnail,
-    ScrollView,
-    SectionList,
+    Stack,
     VStack,
+    ScrollView,
     Flex,
     Divider,
+    Center,
     Image} from 'native-base';
 import globalStyles from '../styles/global';
 
@@ -31,35 +31,33 @@ const MTienda = () => {
     return ( 
         <NativeBaseProvider>
             <ScrollView w={["1000", "1100"]} h="80">
-            <Container style={globalStyles.contenedorTienda}>
-               <Box style={{ blackgroundColor: '#FFF'}}>
-                <List>
-                    {tienda.map( articulo => {
-                       const {imagen, nombre, descripcion, categoria, precio, id} = articulo;
-                        
+                <Container style={globalStyles.contenedorTienda}>
+                    <Box style={{ blackgroundColor: '#FFF'}}>
+                        <List>
+                            {tienda.map( articulo => {
+                            const {imagen, nombre, descripcion, categoria, precio, id} = articulo;
+
                        return (
                         <Fragment key={id}>
-                            <VStack space="2"
+                            <List space="2"
                             >
-                                
-                                    <Image size="12" source={{ uri: imagen }} alt="react-native" />
-                                
-                                <Flex>
+                                <Center>
+                                <Image size="200"  source={{ uri: imagen }} />
+                                </Center>
+                                <VStack  space={4}>
                                     <Text>{nombre} </Text>
                                     <Text
-                                        
-                                        
+                                        note
                                     >{descripcion}</Text>
 
                                     <Text>Precio: $ {precio} </Text>
-                                </Flex>
+                                </VStack>
 
-                            </VStack>
+                            </List>
                         </Fragment>
                        )
                     })}
                 </List>
-
                </Box>
 
             </Container>
