@@ -5,7 +5,9 @@ import firebase from '../../firebase';
 import FirebaseReducer from './firebaseReducer';
 import FirebaseContext from './firebaseContext';
 
-import {OBTENER_PRODUCTOS_EXITO} from '../../types'
+import {OBTENER_PRODUCTOS_EXITO} from '../../types';
+
+import _ from 'lodash';
 
 //Las props son la colección de datos que un componente recibe del contenedor padre, y que pueden usarse para definir los elementos de React que retornará el componente. 
 //En términos prácticos, si un componente necesita recibir información para funcionar, la recibe vía props.
@@ -38,6 +40,10 @@ const FirebaseState = props =>{
                         ...doc.data() //data es el que tiene toda la infotmacion en firebase
                     }
                 });
+                //ORDENAR POR CATEGORIA LODASH
+                articulos = _.sortBy(articulos, 'categoria');
+                //console.log(articulos)
+                
                 //TENER RESULTADOS DE LA BASE DE DATOS
                 dispatch({
                     type: OBTENER_PRODUCTOS_EXITO,

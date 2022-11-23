@@ -7,20 +7,34 @@ const globalStyles = StyleSheet.create({
     },
     contenedorTienda: {
         flex: 1,
-        backgroundColor: '#FFFFFF',
-        marginHorizontal: '3%'
     },
     contenido: {
         marginHorizontal: '2.5%',
         flex: 1,
     },
     boton: {
-        backgroundColor: '#9E9E9E'
+        backgroundColor: '#9E9E9E',
     },
     botonTexto: {
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        color: '#FFFFFF'
+        color: '#000'
+    },
+    titulo:{
+        textAlign: 'center',
+        marginTop: 40,
+        marginBottom: 20,
+        fontSize: 20,
+    },
+    imagen: {
+        height: 350,
+        width: '100%'
+    },
+    cantidad:{
+        marginVertical: 20,
+        textAlign: 'center',
+        fontSize: 22,
+        fontWeight: 'bold'
     },
 })
 
