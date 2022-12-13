@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, Fragment } from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
 import {
     NativeBaseProvider,
@@ -23,8 +23,11 @@ import globalStyles from '../styles/global';
 
 import FirebaseContext from '../context/firebase/firebaseContext';
 import PedidoContext from '../context/pedidos/pedidosContext';
+import { BottomTab } from '../android/src/navigation/BottomTab';
+
 
 const MTienda = () => {
+    
 
     //context de firebase
     const { tienda, obtenerProductos } = useContext(FirebaseContext); //GRACIAS A ESTAS LLAVES PODEMOS IR EXTRAYENDO LO QUE QUERAMOS
@@ -115,7 +118,13 @@ const MTienda = () => {
             
         
     );
+
+    
+      
+    
+    
 }
  
+
 
 export default MTienda;

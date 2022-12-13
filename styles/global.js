@@ -5,6 +5,10 @@ const globalStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000000',
     },
+    contenedorCompra: {
+        flex: 1,
+        backgroundColor: '#00FF00',
+    },
     contenedorTienda: {
         flex: 1,
     },
@@ -19,6 +23,13 @@ const globalStyles = StyleSheet.create({
         textTransform: 'uppercase',
         fontWeight: 'bold',
         color: '#000'
+    },
+    botonTextoCompra: {
+        textTransform: 'uppercase',
+        fontWeight: 'bold',
+        color: '#000',
+        alignItems: 'center',
+        textAlign: 'center'
     },
     titulo:{
         textAlign: 'center',
@@ -36,6 +47,19 @@ const globalStyles = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold'
     },
+    compra: {
+        marginVertical: 20,
+        textAlign: 'center',
+         
+    },
+    botonCompra: {
+        backgroundColor: '#9E9E9E'
+        
+    },
+
+    fondo: {
+        backgroundColor: '#00FF00',
+    }
 })
 
 export default globalStyles;

@@ -46,7 +46,7 @@ const DetalleProducto = () => {
                             <Button size="sm" colorScheme="secondary"
                             onPress={ () => navigation.navigate("FormularioProducto")}
                             >
-                                <Text style={globalStyles.botonTexto}>Ordenar</Text>
+                                <Text style={globalStyles.TextoRea}>Ordenar</Text>
                             </Button>
                 </ScrollView>
         </NativeBaseProvider>

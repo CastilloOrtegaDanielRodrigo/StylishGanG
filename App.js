@@ -13,11 +13,13 @@ import ResumenPedido from './views/ResumenPedido';
 //importar state de context
 import FirebaseState from './context/firebase/firebaseState';
 import PedidoState from './context/pedidos/pedidosState';
+import { BottomTab } from './src/navigation/BottomTab';
 
 
 const Stack = createStackNavigator();
 
 const App = () => {
+
   return (
     <>
     <FirebaseState>
@@ -62,7 +64,7 @@ const App = () => {
             name="FormularioProducto"
             component={FormularioProducto}
             options={{
-              title: "Ordena tu Producto"
+              title: "ESTADO"
             }}
           />
 
@@ -81,6 +83,8 @@ const App = () => {
               title: "Progreso de Pedido"
             }}
           />
+
+            
           </Stack.Navigator>
         </NavigationContainer>
       </PedidoState>
